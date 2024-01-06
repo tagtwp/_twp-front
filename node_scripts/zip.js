@@ -56,9 +56,9 @@ if (slug) {
 	// Pipe archive data to the file.
 	archive.pipe(output);
 
-	// Append the entire contents of the theme directory to a directory with
-	// the theme slug.
-	archive.directory(__dirname + '/../theme/', slug);
+	// Append the entire contents of the frontend directory to a directory with
+	// the frontend slug.
+	archive.directory(__dirname + '/../frontend/', slug);
 
 	// Finalize the archive.
 	archive.finalize();

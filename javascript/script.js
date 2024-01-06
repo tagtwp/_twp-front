@@ -147,12 +147,12 @@
 		localStorage.setItem("theme", "dark");
 	};
 
-	// call theme switch on clicking buttons
+	// call frontend switch on clicking buttons
 	themeSwitcher.addEventListener("click", () => {
 		themeSwitch();
 	});
 
-	// invoke theme check on initial load
+	// invoke frontend check on initial load
 	themeCheck();
 	/* ========  themeSwitcher End ========= */
 })();

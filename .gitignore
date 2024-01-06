@@ -3,8 +3,8 @@
 /vendor
 
 # Ignore generated CSS files and js files:
-/theme/assets/css/style.css
-/theme/assets/js/script.min.js
+/frontend/assets/css/style.css
+/frontend/assets/js/script.min.js
 
 # Ignore the generated zip file:
 *.zip
