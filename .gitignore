@@ -1,5 +1,12 @@
-.DS_Store
-node_modules
+# Ignore dependencies from npm and Composer:
+/node_modules
+/vendor
+
+# Ignore generated CSS files:
+style.css
 
 # Ignore the generated zip file:
 *.zip
+
+# Ignore .DS_Store files from macOS:
+.DS_Store
