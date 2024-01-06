@@ -2,8 +2,9 @@
 /node_modules
 /vendor
 
-# Ignore generated CSS files:
-style.css
+# Ignore generated CSS files and js files:
+/theme/assets/css/style.css
+/theme/assets/js/script.min.js
 
 # Ignore the generated zip file:
 *.zip
