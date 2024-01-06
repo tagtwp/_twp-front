@@ -10,13 +10,20 @@
 		"dev": "npm run development",
 		"watch:tailwind:frontend": "npm run development:tailwind:frontend -- --watch",
 		"watch:esbuild": "npm run development:esbuild -- --watch",
+		"watch:browser-sync": "browser-sync start --proxy \"twp-front.test\" --files \"theme\" --no-notify --no-inject-changes",
 		"watch": "run-p \"watch:**\"",
 		"lint:eslint": "npx eslint theme/",
 		"lint:prettier": "npx prettier --check .",
 		"lint": "run-p \"lint:*\"",
 		"lint-fix:eslint": "npx eslint theme/ --fix",
 		"lint-fix:prettier": "npx prettier --write .",
-		"lint-fix": "run-p \"lint-fix:*\""
+		"lint-fix": "run-p \"lint-fix:*\"",
+		"production:tailwind:frontend": "cross-env NODE_ENV=production npm run development:tailwind:frontend -- --minify",
+		"production:esbuild": "npm run development:esbuild -- --minify",
+		"production": "run-p \"production:**\"",
+		"prod": "npm run production",
+		"zip": "node node_scripts/zip.js twp-front",
+		"bundle": "run-s production zip"
 	},
 	"repository": {
 		"type": "git",
@@ -26,24 +33,28 @@
 		"twp",
 		"tailwind"
 	],
-		"author": "tagtwp.com",
-		"license": "MIT",
-		"bugs": {
+	"author": "tagtwp.com",
+	"license": "MIT",
+	"bugs": {
 		"url": "https://github.com/tagtwp/twp-front/issues"
 	},
 	"homepage": "https://github.com/tagtwp/twp-front#readme",
 	"devDependencies": {
-		"npm-run-all": "^4.1.5",
-		"prettier": "^3.1.1",
-		"prettier-plugin-tailwindcss": "^0.5.11",
-		"tailwindcss": "3.4.0",
+		"@angular-eslint/template-parser": "^17.1.1",
+		"adm-zip": "^0.5.10",
+		"archiver": "^6.0.1",
+		"cross-env": "^7.0.3",
 		"esbuild": "^0.19.10",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-php-markup": "^6.0.0",
 		"eslint-plugin-tailwindcss": "^3.13.1",
+		"npm-run-all": "^4.1.5",
 		"postcss": "^8.4.33",
 		"postcss-import-ext-glob": "^2.1.1",
-		"@angular-eslint/template-parser": "^17.1.1"
+		"prettier": "^3.1.1",
+		"prettier-plugin-tailwindcss": "^0.5.11",
+		"tailwindcss": "3.4.0",
+		"browser-sync": "^3.0.2"
 	}
 }
