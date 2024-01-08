@@ -3,6 +3,40 @@
 twp-front by TagTWP. This template specially crafted for SaaS, startup, business and software website.
 Play crafted in a way that you can use with almost all sort of web project. This is Tailwind CSS template built using [TagTWP](https://tagtwp.com/) components.
 
+Installation
+---------------
+
+### Requirements
+
+`_s` requires the following dependencies:
+
+- [Node.js](https://nodejs.org/)
+- [Composer](https://getcomposer.org/)
+
+### Setup
+
+To start using all the tools that come with `_s`  you need to install the necessary Node.js and Composer dependencies :
+
+```sh
+$ npm install && npm run dev
+```
+
+### Development
+
+- `npm run watch` : watches all SASS files and recompiles them to css when they change.
+- `npm run dev` : compiles Tailwind and Script files to css and js.
+- `npm run lint` : Find problems in your JavaScript code formatter.
+- `npm run lint:fix` : Fix problems in your JavaScript code formatter.
+- `npm run lint` : compiles Tailwind and Script files to css and js.
+
+### Deployment
+
+- `npm run bundle` : generates a .zip archive for distribution, excluding development and system files.
+
+Now you're ready to go! The next step is easy to say, but harder to do: make an awesome Front End. :)
+
+Good luck!
+
 ## 📃 License
 
 Play is an open-source template, you can use it with your personal or commercial projects without any attribution or backlink.
