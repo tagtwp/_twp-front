@@ -25,8 +25,8 @@ $ npm install && npm run dev
 
 - `npm run watch` : watches all SASS files and recompiles them to css when they change.
 - `npm run dev` : compiles Tailwind and Script files to css and js.
-- `npm run lint` : Find problems in your JavaScript code formatter.
-- `npm run lint:fix` : Fix problems in your JavaScript code formatter.
+- `npm run lint` : Find problems Tailwind, Script and code formatter.
+- `npm run lint:fix` : Fix problems Tailwind, Script and code formatter.
 - `npm run lint` : compiles Tailwind and Script files to css and js.
 
 ### Deployment
